@@ -44,5 +44,5 @@ if __name__ == "__main__":
         s.remove(5)
         s.remove(-6)
         print("after removing 5 from s, s=",s)
-        \
+
         
