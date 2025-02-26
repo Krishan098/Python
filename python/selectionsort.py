@@ -9,3 +9,5 @@ def selection_sort(L):
     return L
 testList=[10000,200,3,59,74,91,18,27]
 print(selection_sort(testList))
+if __name__=='__main__':
+    selection_sort([9,8,12,2])
