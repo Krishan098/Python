@@ -149,5 +149,43 @@ print(A|B)#Union
 :. Frozen set is hashable
 :.A.union(B),A.intersection(B),A.difference(B)
 '''
+''' 
+-------------------------------DICTIONARY---------------------------------------
+'''
+#syntax of a JSON document
 
+numbers={'jack':'0888289922','Pete':'8973677637'}
+numbers['Pete']
+del(numbers['jack'])
 
+print(numbers.get('L',8887788))
+print(numbers)
+numbers['Pete']='12345678'
+
+a={'sub_dict':{'b':True},'mylist':[100,200,399]}
+a['sub_dict']['b']
+a['mylist'][0]
+dict([ ('Jack', '070-02222748'), 
+           ('Pete', '010-2488634'), 
+           ('Eric', '06-10101010') ])
+{x : x**2 for x in (2,4,6)}
+c=['B','A','C']
+k=dict.fromkeys(c,(b,a,c))
+#print(k)
+import json
+jsonstring='{"name":"erik","age":38,"married":true}'
+json.loads(jsonstring)
+'Jack' in numbers
+#Value in view object change as the content of the dictionary changes.
+numbers.values()
+numbers.keys()
+'''items method return an iterable view object, offering both the keys and values'''
+numbers.items()
+for name,phonenr in numbers.items():
+    print(name,":",phonenr)
+#To access keys
+list(numbers)
+sorted(numbers)
+'''Merging Dicts'''
+n=numbers| k
+merged={**numbers,**k}
