@@ -38,6 +38,7 @@ Decimal(6)/Decimal(7)
 
 num=(1,2,4)
 same=1,2,4
+#print("same's type:", type(same))
 string=('HEllo','world')
 mixed=('hello',1,2,True,3./4,)
 print(tuple([0,1,2]))
@@ -126,9 +127,9 @@ mix_set.update(range(3))#use update if multiple elements are to be added
 p={x for x in 'hi my name is alphonso' if x not in '., '}
 print(p)
 ''' Used for mathematical operations
-        :.difference
+        :.Difference
         :.Union
-        :. Intersection
+        :.Intersection
         :.Subsets and supersets
 '''
 a={1,2,3,4,5,}
@@ -143,10 +144,10 @@ C={1,2,3,10}
 print(A<B)#is A subset of B
 print(B>A)#is B superset of A
 print(A|B)#Union
-'''Frozenset:Unlike the usual mutual set, this one gets frozen directly after creation
+''' Frozenset: Unlike the usual mutable set, this one gets frozen directly after creation
 :.WE CAN MIX THE SET AND THE FROZENSET TYPES.   
-:. All operations work on these combinations.
-:. Frozen set is hashable
+:.All operations work on these combinations.
+:.Frozen set is hashable
 :.A.union(B),A.intersection(B),A.difference(B)
 '''
 ''' 
@@ -182,7 +183,7 @@ numbers.keys()
 '''items method return an iterable view object, offering both the keys and values'''
 numbers.items()
 for name,phonenr in numbers.items():
-    print(name,":",phonenr)
+    print('name:',name,":",'phonenr:',phonenr)
 #To access keys
 list(numbers)
 sorted(numbers)
