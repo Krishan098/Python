@@ -49,5 +49,17 @@ poetry export -o <filename>	:Export the list of dependencies to a requirements.t
 poetry install: Install all dependencies of the current poetry project. Uses poetry.lock if present.
 poetry run <command>:	Run the command inside the project’s virtual environment
 poetry shell:	Start a new shell with the project’s virtual environment activated
+'''
+'''
+Issues due to pip:
+                Dependency conflicts:
+                
+                System Breakage:
+                
+                Difficulty Isolating Issues:
+                
+                Not easy to remove or update packages:
+                
+                Lack of isolation:
 
 '''
