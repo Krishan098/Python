@@ -63,3 +63,9 @@ Issues due to pip:
                 Lack of isolation:
 
 '''
+
+'''
+                pipx:
+                        It is a utility for installing and running Python applications in isolated environments.
+                        
+'''
