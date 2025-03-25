@@ -67,5 +67,28 @@ Issues due to pip:
 '''
                 pipx:
                         It is a utility for installing and running Python applications in isolated environments.
-                        
+                        Advantages:
+                                :. Isolation of dependencies.
+                                :. Safe experimentation : Because each application has it's own isolated environment.
+                                :. Gloabal access 
+                                :.Easy uninstallation
+                                :.Run-Once application
+                                :. Keeps your system clean
+                                :. Manageable Upgrade/Downgrade
+                                :. Safe for system Python
+'''
+'''
+        Pipx is typically used to install and run Python tools and applications.
+        Black:popular python code formatter
+        Flake8
+        Mypy
+'''
+'''
+                pipx install
+                pipx inject
+                pipx run youtube-dl <link>
+'''
+
+'''   PyEnv:
+                Allows users to switch between multiple versions of Python easily without te=ampering with system's default Python installation. 
 '''
