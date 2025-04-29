@@ -474,19 +474,55 @@ import random
 #         d = random.randint(1, 10)
 #         print(random.randint(1, 10))
 
-x=25 
-eps=0.01
-numGu=0
-low=1
-high=x
-ans=(low+high)/2
-while abs(ans**2-x)>=eps:
-    print('low = '+ str(low)+';\thigh = '+str(high)+';\tans = '+str(ans))
-    numGu+=1
-    if ans**2<x:
-        low=ans
-    else:
-        high=ans
-    ans=(high+low)/2
-print('numGu= '+str(numGu))
-print(str(ans)+'is close to square root of '+str(x))
+# x=25 
+# eps=0.01
+# numGu=0
+# low=1
+# high=x
+# ans=(low+high)/2
+# while abs(ans**2-x)>=eps:
+#     print('low = '+ str(low)+';\thigh = '+str(high)+';\tans = '+str(ans))
+#     numGu+=1
+#     if ans**2<x:
+#         low=ans
+#     else:
+#         high=ans
+#     ans=(high+low)/2
+# print('numGu= '+str(numGu))
+# print(str(ans)+'is close to square root of '+str(x))
+class patterns():
+  def __init__(self,n):
+    self.n=n
+  def pattern1(self):
+    for i in range(self.n):
+      for j in range(self.n):
+        print('*',end=' ')
+      print()
+  def pattern2(self):
+      for i in range(self.n):
+          for j in range(i):
+              print('*', end=' ')
+          print() 
+   
+star=patterns(5)
+star.pattern1()
+star.pattern2()
+print(10)
+class Member():
+  def __init__(self,balance,loan):
+    self.balance=balance
+    self.loan=loan
+  def total_balance():
+    pass
+class cipher():
+  def __init__(self,string,k):
+    self.string=string
+    self.k=k
+  def caesar(self):
+    alphabet='abcdefghijklmnopqrstuvwxyz'
+    new=''
+    for i in range(len(self.string)):
+      new=new+alphabet[((alphabet.index(self.string[i])+self.k)%26)]
+    return new
+st=cipher('hello',2)
+print(st.caesar())
