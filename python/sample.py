@@ -582,7 +582,21 @@ class fact():
     for i in range(1, 11):
       print(self.k,"x",i,"=",self.k*i)
     return None
-num=fact(121)
+  def isPrime(self):
+    if(self.k>=2):
+      print(2,end=' ')
+    for i in range(3,self.k):
+      flag=False
+      for j in range(2,i):
+        if(i%j==0):
+          flag=False
+          break
+        else:
+          flag=True
+      if flag:
+        print(i,end=' ')
+num=fact(12)
 # num.compute()
 # num.count_digit()
-num.table()
+#num.table()
+num.isPrime()
