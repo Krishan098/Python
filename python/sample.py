@@ -525,4 +525,64 @@ class cipher():
       new=new+alphabet[((alphabet.index(self.string[i])+self.k)%26)]
     return new
 st=cipher('hello',2)
-print(st.caesar())
+#print(st.caesar())
+# time=int(input("Enter time: "))
+# longer=int(input('Define longer: '))
+import calendar
+# print(calendar.calendar(2025))
+class fact():
+  def __init__(self,k):
+    self.k=k
+  def compute(self):
+    i=1
+    answer=1
+    while i<=self.k:
+      answer*=i
+      i+=1
+    return answer
+  def compute_2(self):
+    fact=1
+    if(num<0):
+      print('Not defined')
+    else:
+      while(num>0):
+        fact=fact*num
+        num-=1
+    return fact
+  def count_digit(self):
+    digits=1
+    while(self.k>9):
+      self.k=self.k//10
+      digits+=1
+    return digits
+  def reverse(self):
+    absNum=abs(self.k)
+    if(self.k>=0):
+      rev=self.k%10
+      self.k=self.k//10
+      while(self.k>0):
+        r=self.k%10
+        self.k=self.k//10
+        rev=rev*10+r
+      return rev
+    else:
+      rev=absNum%10
+      absNum=absNum//10
+      while(absNum>0):
+        r=absNum%10
+        absNum=absNum//10
+        rev=rev*10+r
+      return -rev
+  def ispalindrome(self):
+    if fact.reverse(self.k)==self.k:
+      return 'It is a palindrome'
+    else:
+      return 'not a palindrome'
+  def table(self):
+    for i in range(1, 11):
+      print(self.k,"x",i,"=",self.k*i)
+    return None
+num=fact(121)
+# num.compute()
+# num.count_digit()
+num.table()
