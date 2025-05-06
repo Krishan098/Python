@@ -599,4 +599,38 @@ num=fact(12)
 # num.compute()
 # num.count_digit()
 #num.table()
-num.isPrime()
+#num.isPrime()
+
+#Birthday Paradox
+# l=[]
+# for i in range(30):
+#   l.append(random.randint(1,365))
+# l.sort()
+# print(l)
+# i=0
+# flag=0
+# while(i<len(l)-1):
+#   if(l[i]==l[i+1]):
+#     print("Repeats",l[i])
+#     flag=1
+#   i+=1
+# if(flag==0):
+#   print("Doesn't repeat?")
+
+def sort_1(list_1):
+  x=[]
+  while(len(list_1)>0):
+    min_=list_1[0]
+    for i in range(len(list_1)):
+      if list_1[i]<min_:
+        min_=list_1[i]
+    x.append(min_)
+    list_1.remove(min_)
+  return x
+#sort_1([9,8,7,6,5,4,3,2,1])
+def dotp(l1,l2):
+  result=0
+  for i in range(len(l1)):
+      result+=l1[i]*l2[i]
+  return result 
+dotp([1,2,3],[4,5,6])     
