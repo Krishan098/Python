@@ -633,4 +633,19 @@ def dotp(l1,l2):
   for i in range(len(l1)):
       result+=l1[i]*l2[i]
   return result 
-dotp([1,2,3],[4,5,6])     
+#dotp([1,2,3],[4,5,6])
+def add_mat(m1,m2):
+  C=[[0,0,0],[0,0,0],[0,0,0]]
+  for i in range(len(m1)):
+    for j in range(len(m2)):
+      C[i][j]=m1[i][j]+m2[i][j]
+  return C
+#add_mat([[1,2,3],[4,5,6],[7,8,9]],[[9,8,7],[6,5,4],[3,2,1]])
+def mat_mul(a,b):
+  C=[[0,0,0],[0,0,0],[0,0,0]]
+  for i in range(len(a)):
+    for j in range(len(b)):
+      for k in range(len(b)):
+        C[i][j]+=a[i][k]*b[k][j]
+  return C
+mat_mul([[1,2,3],[4,5,6],[7,8,9]],[[9,8,7],[6,5,4],[3,2,1]])
